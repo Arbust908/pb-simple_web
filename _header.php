@@ -9,11 +9,9 @@
     </article>
   </a>
   <nav>
-
+    <a href="/Loader"> Loader </a>
     <a href="/clase6/final.php" <?= $pagina=="home"?"selected":"";?> >Home</a>
     <a href="/clase6/nosotros.php" <?= $pagina == "nosotros" ? "selected" : ""; ?> >Nosotros</a>
-    <a href="/Loader"> Loader </a>
-
     <?php if (isset($_GET['noche'])) : ?>
       <a href="/clase6/final.php?dia" title="Modo Dia"><i class="far fa-toggle-off"></i></a>
     <?php else : ?>
