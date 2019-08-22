@@ -1,0 +1,133 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+
+  font-family: 'Oswald', sans-serif;
+}
+
+header,
+footer{
+  background-color: tomato;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 10px;
+  height: 80px; 
+}
+
+header>nav>a{
+  padding: 4px 6px;
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+}
+header>nav>a[selected]{
+  border-bottom: white 1px solid;
+  font-weight: 700;
+}
+header>nav>a:hover:not([selected]){
+  background-color: rgba(88, 88, 88, 0.2);
+}
+
+main{
+    min-height: calc(100vh - calc(80px + 80px) );
+    background-color: hsl(9, 1.00, 0.79);
+}
+
+main>section.hero{
+  background: #FF6347
+ -webkit-gradient(linear, left top, left bottom, from(#FF6347), to(#FF8247)) no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 60px;
+  color: white;
+}
+.hero>h1{
+  font-size: 3em;
+  margin: 0px;
+}
+
+.login,
+.mons{
+  position: relative;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto
+}
+.login{
+  padding:60px;
+}
+.login>article{
+  position: absolute;
+  top: -30px;
+  width: 60%;
+  border-radius: 20px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16),
+              0 0 0 1px rgba(0,0,0,0.08);
+  background-color: #fafafa;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+.login h3{
+  font-size: 2em;
+  margin: 0;
+  color: tomato;
+  text-transform: uppercase;
+}
+.login form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+form>label{
+  font-size: 0.6em;
+}
+form>input{
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: tomato ;
+  border: 0px transparent solid;
+}
+form ::placeholder{
+  color: white;
+  opacity: 0.7;
+}
+.mons>h3{
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+.mons>article{
+  padding: 30px;
+  border-radius: 30px;
+  width: 180px;
+  height: 300px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16),
+            0 0 0 1px rgba(0,0,0,0.08);
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.foot-nav>a{
+  color: black;
+  text-decoration: none;
+}
+.importante{
+  font-size: 3em;
+}
